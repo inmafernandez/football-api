@@ -1,13 +1,15 @@
 {
-  "name": "tooling",
+  "name": "la-liga",
   "version": "1.0.0",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel ./src/index.html",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "eslint \"src/**/*.js\" --quiet",
     "test": "jest --passWithNoTests --silent",
-    "tdd": "jest --watchAll"
+    "tdd": "jest --watchAll",
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "Inma",
@@ -20,7 +22,13 @@
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "jest": "^24.9.0",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "dependencies": {
+    "reset.css": "^2.0.2"
   }
 }
